@@ -1,0 +1,27 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "ordered-imports": false,
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "no-empty-interface": false,
+    "trailing-comma": false,
+    "typedef": [
+      true,
+      "call-signature",
+      "property-declaration"
+    ],
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowShortCircuit": true,
+        "allowTernary": true
+      }
+    ],
+    "no-shadowed-variable": false,
+    "object-literal-sort-keys": false,
+    "member-ordering": false
+  }
+}

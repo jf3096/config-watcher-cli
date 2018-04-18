@@ -1,0 +1,48 @@
+{
+  "name": "config-watcher-cli",
+  "version": "0.0.2",
+  "description": "a tool used to monitor a config file and trigger a command",
+  "main": "src/bin/index.js",
+  "typings": "src/index.d.ts",
+  "devDependencies": {
+    "@types/chai": "^4.0.2",
+    "@types/chokidar": "1.7.5",
+    "@types/commander": "2.12.2",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^8.0.22",
+    "@types/shelljs": "0.7.8",
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0",
+    "mochawesome": "2.3.0",
+    "nyc": "11.1.0",
+    "rimraf": "2.6.1",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.6.0",
+    "typescript": "2.7.2"
+  },
+  "keywords": [
+    "config-watcher"
+  ],
+  "bin": {
+    "config-watcher": "bin/index.js"
+  },
+  "scripts": {
+    "test": "mocha src/**/*.spec.ts --watch-extensions ts --require ts-node/register -t 2000",
+    "test:coverage": "nyc --reporter=text npm run test",
+    "test:watch": "npm test -- --watch",
+    "test:report": "npm test -- --reporter mochawesome",
+    "link": "npm link",
+    "prebuild": "npm run lint && tsc --version",
+    "build": "tsc --pretty",
+    "lint": "tslint --force \"src/**/*.ts\"",
+    "prepublishOnly": "npm run build",
+    "start": "ts-node src/index.ts"
+  },
+  "author": "Ailun She",
+  "license": "MIT",
+  "dependencies": {
+    "chokidar": "2.0.3",
+    "commander": "2.15.0",
+    "shelljs": "0.8.1"
+  }
+}
