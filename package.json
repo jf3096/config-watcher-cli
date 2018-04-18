@@ -1,6 +1,6 @@
 {
   "name": "config-watcher-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a tool used to monitor a config file and trigger a command",
   "main": "src/bin/index.js",
   "typings": "src/index.d.ts",
