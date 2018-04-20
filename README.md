@@ -34,11 +34,11 @@ Listen for an FS event. Available events: add, change, unlink. default is add an
 
 common case, lets say if we need to watch the shadowsocks.json. If any changes applies to it, it will restart the shadowsocks:
 
-`config-watcher-cli -c "/etc/shadowsocks.json" -C "ssserver -c /etc/shadowsocks.json -d restart"`
+`config-watcher -c "/etc/shadowsocks.json" -C "ssserver -c /etc/shadowsocks.json -d restart"`
 
 with specific watch mode, react whenever delete target file:
 
-`config-watcher-cli -c "/etc/shadowsocks.json" -C "ssserver -c /etc/shadowsocks.json -d restart" -w "unlink"` 
+`config-watcher -c "/etc/shadowsocks.json" -C "ssserver -c /etc/shadowsocks.json -d restart" -w "unlink"` 
 
 ## Author
 Ailun She

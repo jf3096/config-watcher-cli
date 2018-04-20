@@ -36,7 +36,8 @@
     "build": "tsc --pretty",
     "lint": "tslint --force \"src/**/*.ts\"",
     "prepublishOnly": "npm run build",
-    "start": "ts-node src/index.ts"
+    "start": "ts-node src/index.ts",
+    "publish-npm": "npm publish --registry https://registry.npmjs.org"
   },
   "author": "Ailun She",
   "maintainers": {},
