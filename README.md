@@ -10,7 +10,7 @@ a tool used to watch config file and react when the config file has been impact 
 
 ## How to use
 
-Open your command line or shell and key in,
+Open your command line or shell and key in `config-watcher`:
 
 ```
     Usage: index [options]
