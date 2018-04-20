@@ -1,6 +1,6 @@
 # config-watcher-cli
 
-a tool used to watch config file and react when the config file has been changed.
+a tool used to watch config file and react when the config file has been impact (add, delete or change).
 
 ## Installation
 
@@ -11,8 +11,6 @@ a tool used to watch config file and react when the config file has been changed
 ## How to use
 
 Open your command line or shell and key in,
-
-`config-watcher-cli -s <source of your images> -d <destination of your images>`
 
 ```
     Usage: index [options]
