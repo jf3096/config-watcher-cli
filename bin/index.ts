@@ -7,11 +7,12 @@ program
   .version(pkg.version)
   .option('-c, --config <value>', 'config file path')
   .option('-C, --cmd <value>', 'if any changes from config file can trigger current cmd')
+  .option('-w, --watch-mode [value]', 'watch file mode [add, change, unlink], default: add and change')
   .parse(process.argv);
 
 if (process.argv.length === 2) {
   program.outputHelp();
 } else {
-  const {cmd, config} = program;
-  programActions.start({cmd, config});
+  const {cmd, config, watchMode} = program;
+  programActions.start({cmd, config, watchMode});
 }

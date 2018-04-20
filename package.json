@@ -1,6 +1,6 @@
 {
   "name": "config-watcher-cli",
-  "version": "0.0.5",
+  "version": "0.0.1",
   "description": "a tool used to monitor a config file and trigger a command",
   "main": "src/bin/index.js",
   "typings": "src/index.d.ts",
@@ -39,6 +39,7 @@
     "start": "ts-node src/index.ts"
   },
   "author": "Ailun She",
+  "maintainers": {},
   "license": "MIT",
   "dependencies": {
     "chokidar": "2.0.3",
